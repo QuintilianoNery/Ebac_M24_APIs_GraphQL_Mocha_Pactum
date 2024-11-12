@@ -1,0 +1,24 @@
+{
+  "name": "pactum_graphql",
+  "version": "1.0.0",
+  "description": "Testes em api GraphQL com Pactum e Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuintilianoNery/Ebac_M24_APIs_GraphQL_Mocha_Pactum.git"
+  },
+  "author": "quintilianoNery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuintilianoNery/Ebac_M24_APIs_GraphQL_Mocha_Pactum/issues"
+  },
+  "homepage": "https://github.com/QuintilianoNery/Ebac_M24_APIs_GraphQL_Mocha_Pactum#readme",
+  "devDependencies": {
+    "mocha": "^10.8.2",
+    "pactum": "^3.7.3",
+    "pactum-matchers": "^1.1.7"
+  }
+}
