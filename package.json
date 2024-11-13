@@ -4,7 +4,7 @@
   "description": "Testes em api GraphQL com Pactum e Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js"
+    "test": "mocha ./test/api/**/*.test.js"
   },
   "repository": {
     "type": "git",

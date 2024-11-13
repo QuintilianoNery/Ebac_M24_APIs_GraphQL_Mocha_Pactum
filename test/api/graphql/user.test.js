@@ -22,8 +22,10 @@ beforeEach(async () => {
         .expectStatus(200)
         .expectJson('data.authUser.success', true
         )
-        .stores('token', 'data.authUser.token')
+        .returns('data.authUser.token')
 })
+console.log(token)
+
 it('Lista de usuários', async () => {
     await spec()
         .post('/')
