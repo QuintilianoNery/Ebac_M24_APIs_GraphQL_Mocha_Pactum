@@ -24,7 +24,6 @@ beforeEach(async () => {
         )
         .returns('data.authUser.token')
 })
-console.log(token)
 
 it('Lista de usuários', async () => {
     await spec()

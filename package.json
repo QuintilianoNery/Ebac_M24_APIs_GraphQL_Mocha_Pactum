@@ -1,10 +1,14 @@
 {
   "name": "pactum_graphql",
-  "version": "1.0.0",
+  "version": "1.1.8",
   "description": "Testes em api GraphQL com Pactum e Mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/api/**/*.test.js"
+    "test": "mocha ./test/api/**/*.test.js",
+    "test:gql": "mocha ./test/api/graphql/**/*.test.js",
+    "test:rest": "mocha ./test/api/rest/**/*.test.js",
+    "test:contractProvider": "mocha ./test/api/contract/**/loginProvider.test.js",
+    "test:contractConsumer": "mocha ./test/api/contract/**/loginConsumer.test.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,7 @@
   "devDependencies": {
     "mocha": "^10.8.2",
     "pactum": "^3.7.3",
+    "pactum-flow-plugin": "^0.1.4",
     "pactum-matchers": "^1.1.7"
   }
 }
