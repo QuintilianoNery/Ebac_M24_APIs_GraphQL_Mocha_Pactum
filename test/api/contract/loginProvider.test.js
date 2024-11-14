@@ -1,19 +1,5 @@
-const { spec, request } = require('pactum')
-const { reporter, flow } = require('pactum');
-const pf = require('pactum-flow-plugin');
-const { incrementVersion } = require('../../../function/version.js');
-
-
-
-function addFlowReporter() {
-  pf.config.url = 'http://localhost:8080'; // pactum flow server url
-  pf.config.projectId = 'lojaEbacApi';
-  pf.config.projectName = 'Ebac Api';
-  pf.config.version = incrementVersion();
-  pf.config.username = 'scanner';
-  pf.config.password = 'scanner';
-  reporter.add(pf.reporter);
-}
+const { reporter, flow, request } = require('pactum');
+const { addFlowReporter } = require('../../../config/config.js');
 
 // global before
 before(async () => {
